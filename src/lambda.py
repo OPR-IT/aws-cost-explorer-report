@@ -411,8 +411,8 @@ class CostExplorer:
             msg['From'] = os.environ.get('SES_FROM')
             msg['To'] = COMMASPACE.join(os.environ.get('SES_SEND').split(","))
             msg['Date'] = formatdate(localtime=True)
-            msg['Subject'] = "Cost Explorer Report"
-            text = "Find your Cost Explorer report attached\n\n"
+            msg['Subject'] = "SiteCheck Cost Explorer Report"
+            text = "Find your SiteCheck Cost Explorer report attached\n\n"
             msg.attach(MIMEText(text))
             with open("cost_explorer_report.xlsx", "rb") as fil:
                 part = MIMEApplication(
