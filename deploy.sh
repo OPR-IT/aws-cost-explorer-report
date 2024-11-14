@@ -5,7 +5,7 @@ export AWS_DEFAULT_REGION=us-west-1
 #Must be in same region as lambda (ie AWS_DEFAULT_REGION)
 export BUCKET=sitecheck-cost-bucket 
 #Comma Seperated list of emails to send to
-export SES_TO=doug.hunting@lci.ca.gov,zaid.ridha@lci.ca.gov
+export SES_TO=zaid.ridha@lci.ca.gov,derek.campbell@opr.ca.gov
 export SES_FROM=doug.hunting@lci.ca.gov
 export SES_REGION=us-west-1
 #Comma Seperated list of Cost Allocation Tags (must be configured in AWS billing prefs)
